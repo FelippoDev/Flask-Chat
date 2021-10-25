@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block body %}
+  <div class="container">
+    <div class="content">
+      <h3>Connect to rooms or to the global chat</h3>
+      <a class="rooms movies" href="{{ url_for('movies_chat')}}" id="movies">Movies</a>
+      <a class="rooms animes" href="{{ url_for('anime_chat')}}" id="anime">Animes</a>
+      <a class="rooms gaming" href="{{ url_for('games_chat')}}" id="gaming">Gaming</a>
+      <a class="rooms books" href="{{ url_for('books_chat') }}" id="books">Books</a>
+    </div>
+  </div>
+{% endblock %}

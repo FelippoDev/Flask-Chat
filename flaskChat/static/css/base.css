@@ -1,0 +1,94 @@
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+.navbar-icon-top .navbar-nav .nav-link > .fa {
+  position: relative;
+  font-size: 22px;
+}
+
+.navbar-icon-top .navbar-nav .nav-link > .fa > .badge {
+  font-size: 0.75rem;
+  position: absolute;
+  right: 0;
+  font-family: sans-serif;
+}
+
+@media (min-width: 992px) {
+  .navbar-icon-top.navbar-expand-lg .navbar-nav .nav-link {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .navbar-icon-top.navbar-expand-lg .navbar-nav .nav-link > .fa {
+    color: rgb(153, 153, 153);
+    display: block;
+    width: 48px;
+    margin: 2px auto 4px auto;
+    top: 0;
+    line-height: 24px;
+  }
+
+  .navbar-icon-top.navbar-expand-lg .navbar-nav .nav-link > .fa > .badge {
+    color: white;
+    top: -7px;
+    font-size: 10px;
+    border-radius: 10rem;
+    background-color: rgb(194, 48, 48);
+  }
+}
+/* ENDING NAV BAR */
+
+body {
+  background: linear-gradient(30deg, #380e5e, #093980);
+}
+
+.container {
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.295);
+  height: 400px;
+  width: 400px;
+  background-color: rgb(252, 246, 246);
+  border-radius: 1rem;
+  position: relative;
+  top: 10vh;
+}
+
+.rooms {
+  position: absolute;
+  top: 20vh;
+  left: 30vh;
+}
+
+#movies {
+  position: absolute;
+  margin-top: 30px;
+ 
+}
+
+#animes {
+  position: absolute;
+  /* margin-top: 100px; */
+}
+
+#gaming {
+  position: absolute;
+  margin-top: 60px;
+}
+
+#books {
+  position: absolute;
+  margin-top: 90px;
+}
+
+.content h3{
+  font-size: 15px;
+  text-align: center;
+  position: relative;
+  top: 40px;
+}
+
+/* .content a{
+  text-align: center;
+  vertical-align: 7rem;
+}  */

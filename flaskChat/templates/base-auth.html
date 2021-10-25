@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1ab94d0eba.js" crossorigin="anonymous"></script>
+    <title>Register Form</title>
+    <link rel="stylesheet" href="../static/css/auth.css">
+</head>
+<body>
+    {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+      {% for category, message in messages %}
+       <script>alert("{{ message }}")</script>
+      {% endfor %}
+    {% endif %}
+    {% endwith %}
+    {% block body %}
+
+    {% endblock %}
+</body>
