@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 @import url("//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
 @media (min-width: 992px) {
@@ -13,23 +14,27 @@
   .badge {
     color: white;
     top: -7px;
-    font-size: 10px;
-    border-radius: 10rem;
+    height: 16px;
+    width: 16px;
+    font-size: 11px;
+    border-radius: 50%;
     background-color: rgb(209, 52, 52);
     position: absolute;
-    top: 1px;
-    
+    top: 1px; 
+    justify-content: right;
   }
+
   
   .bi {
     position: relative;
     color: rgb(247, 245, 245);
     display: block;
     width: 40px;
+    height: 40px;
     margin: 2px auto 4px auto;
     top: 3px;
     line-height: 24px;
-    font-size: 18px;
+    font-size: 20px;
     padding: 5px;
   }
 
@@ -38,26 +43,112 @@
     color: rgb(247, 245, 245);
     display: block;
     width: 40px;
+    height: 40px;
     margin: 2px auto 4px auto;
     top: 3px;
     line-height: 24px;
-    font-size: 18px;
+    font-size: 20px;
     background-color: #1b4d97;
-    border-radius: 10rem;
+    border-radius: 50%;
     padding: 5px;
+
   }
 
+  .bi:active {
+    background-color: black;
+  }
+
+
+  
   #friends {
     font-size: 24px;
   }
-  
-  
+
 }
+
+
+.wrapper {
+  overflow: hidden;
+  position: absolute;
+  top: 90%;
+  left: 74%;
+  display: flex;
+  width: 300px;
+  background-color:rgb(32, 31, 31) ;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  display: block;
+}
+
+.wrapper ul{
+  width: 300px;
+  list-style: none;
+  padding: 10px 0px 0px 0px;
+  transition: all 0.3s ease;
+}
+
+.wrapper ul li {
+  padding: 0px 10px;
+  list-style: none;
+  line-height: 55px;
+  display: flex;
+}
+
+.wrapper a {
+  text-decoration: none;
+  font-weight: 500;
+  margin: 2px;
+  align-items: center;
+  font-size: 17px;
+  width: 250px;
+  height: 50px;
+  padding: 0px 10px;
+  display: inline-block;
+  /* background-color: rgba(55, 55, 70, 0.822); */
+  border-radius: 10px;
+}
+
+.wrapper a:hover {
+  background-color: rgba(55, 55, 70, 0.822);
+}
+
+
+
 /* ENDING NAV BAR */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  font-family: 'Poppins', sans-serif;
+}
+
 
 html, body {
   min-height: 100%;
   background: linear-gradient(30deg, #380e5e, #093980);
+}
+
+button {
+  background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+button:focus{
+  background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+  margin: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+ 
 }
 
 .container {
